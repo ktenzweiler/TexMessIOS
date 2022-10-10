@@ -19,7 +19,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <point key="canvasLocation" x="139" y="114"/>
         </view>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="170" id="Zfk-Cb-0Ri" customClass="MessageCell" customModule="TexMess" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="170" id="Zfk-Cb-0Ri" customClass="MessageCell" customModule="TexMess" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="349" height="170"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zfk-Cb-0Ri" id="ytO-sY-I52">
