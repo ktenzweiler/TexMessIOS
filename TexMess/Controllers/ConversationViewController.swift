@@ -20,8 +20,8 @@ class ConversationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         conversationTable.dataSource = self
-        conversationTable.register(UINib(nibName:K.convoCellIdentifier, bundle: nil),
-                                   forCellReuseIdentifier: K.convoCellIdentifier)
+        conversationTable.register(UINib(nibName:K.convoCellId, bundle: nil),
+                                   forCellReuseIdentifier: K.convoCellId)
         loadConversations()
     }
     
@@ -38,14 +38,14 @@ extension ConversationViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let conversation = convos[indexPath.row]
         if conversation.originator == Auth.auth().currentUser?.email {
-            let cell = tableView.dequeueReusableCell(withIdentifier: K.convoCellIdentifier, for: indexPath) as! ConversationCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: K.convoCellId, for: indexPath) as! ConversationCell
             cell.leftAvatar.isHidden = true
             cell.conversationBubble.backgroundColor = UIColor(named:K.BrandColors.lightPurple)
             cell.label.text = convos[indexPath.row].recipients
             cell.label.textColor = UIColor(named: K.BrandColors.purple)
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: K.convoCellIdentifier, for: indexPath) as! ConversationCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: K.convoCellId, for: indexPath) as! ConversationCell
             cell.leftAvatar.isHidden = false
             cell.conversationBubble.backgroundColor = UIColor(named:K.BrandColors.purple)
             cell.label.text = convos[indexPath.row].recipients

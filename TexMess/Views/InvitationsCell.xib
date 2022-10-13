@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InvitationCell" translatesAutoresizingMaskIntoConstraints="NO" id="KGk-i7-Jjw" customClass="InvitationCell" customModule="TexMess" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWl-nV-YbQ" customClass="InvitationCell">
+                        <rect key="frame" x="16" y="4" width="288" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BWl-nV-YbQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2wx-1e-AKN"/>
+                    <constraint firstItem="BWl-nV-YbQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="PPw-5W-ogk"/>
+                    <constraint firstAttribute="trailing" secondItem="BWl-nV-YbQ" secondAttribute="trailing" constant="16" id="ca7-P6-D3i"/>
+                    <constraint firstAttribute="bottom" secondItem="BWl-nV-YbQ" secondAttribute="bottom" constant="4" id="s9U-Nj-GWB"/>
+                    <constraint firstItem="BWl-nV-YbQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="sn7-Hd-3EG"/>
+                    <constraint firstItem="BWl-nV-YbQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="xTT-ug-k2m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="invitationLabel" destination="BWl-nV-YbQ" id="zb0-XU-3pY"/>
+                <outlet property="invitationLable" destination="BWl-nV-YbQ" id="xGM-Lh-Fp1"/>
+            </connections>
+            <point key="canvasLocation" x="138.46153846153845" y="20.616113744075829"/>
+        </tableViewCell>
+    </objects>
+</document>
