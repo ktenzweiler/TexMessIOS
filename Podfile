@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+#platform :ios, '16.0'
 
 target 'TexMess' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -9,6 +9,10 @@ target 'TexMess' do
   pod 'CLTypingLabel', '~> 0.4.0'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-  pod 'IQKeyboardManager' 
+  pod 'IQKeyboardManager'
+  
+  pod 'FirebaseUI'
+#  pod 'FirebaseCore', :modular_headers => true
+#  pod 'GoogleUtilities', :modular_headers => true
 
 end

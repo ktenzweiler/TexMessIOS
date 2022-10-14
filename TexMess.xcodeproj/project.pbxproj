@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6916A21100A3F0D111E9FF08 /* Pods_TexMess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463CD85F2CA91756A4164198 /* Pods_TexMess.framework */; };
 		7F36A7C3280BBCBC003F1D63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F36A7C2280BBCBC003F1D63 /* GoogleService-Info.plist */; };
 		7F39FEDA28037AD10019CED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39FED928037AD10019CED0 /* AppDelegate.swift */; };
 		7F39FEDC28037AD10019CED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39FEDB28037AD10019CED0 /* SceneDelegate.swift */; };
@@ -31,10 +32,10 @@
 		7FE7C36528F3C3060075FC6D /* InvitationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */; };
 		7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */; };
 		7FE7C36928F3C4C10075FC6D /* InvitationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */; };
-		B946A02E6B19A99A30112441 /* Pods_TexMess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24D43745D03A776CB4EEE67 /* Pods_TexMess.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		463CD85F2CA91756A4164198 /* Pods_TexMess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexMess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F36A7C2280BBCBC003F1D63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F39FED628037AD10019CED0 /* TexMess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TexMess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F39FED928037AD10019CED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +62,8 @@
 		7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationsViewController.swift; sourceTree = "<group>"; };
 		7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
 		7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitationsCell.xib; sourceTree = "<group>"; };
-		98F755BE26DBBF5D6445395E /* Pods-TexMess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.debug.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.debug.xcconfig"; sourceTree = "<group>"; };
-		C24D43745D03A776CB4EEE67 /* Pods_TexMess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexMess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE52B6C4A4065D47AFC99DE1 /* Pods-TexMess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.release.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.release.xcconfig"; sourceTree = "<group>"; };
+		F6143E355FC40591B499D71E /* Pods-TexMess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.release.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.release.xcconfig"; sourceTree = "<group>"; };
+		F75B8EB5BD957E4044EC7A20 /* Pods-TexMess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.debug.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B946A02E6B19A99A30112441 /* Pods_TexMess.framework in Frameworks */,
+				6916A21100A3F0D111E9FF08 /* Pods_TexMess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,16 +81,16 @@
 		3F74719C58DB64626B711CBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C24D43745D03A776CB4EEE67 /* Pods_TexMess.framework */,
+				463CD85F2CA91756A4164198 /* Pods_TexMess.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6C37E4D394F7D224B52E8D2C /* Pods */ = {
+		6B957BB9F1342709909588A5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				98F755BE26DBBF5D6445395E /* Pods-TexMess.debug.xcconfig */,
-				FE52B6C4A4065D47AFC99DE1 /* Pods-TexMess.release.xcconfig */,
+				F75B8EB5BD957E4044EC7A20 /* Pods-TexMess.debug.xcconfig */,
+				F6143E355FC40591B499D71E /* Pods-TexMess.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -100,8 +100,8 @@
 			children = (
 				7F39FED828037AD10019CED0 /* TexMess */,
 				7F39FED728037AD10019CED0 /* Products */,
-				6C37E4D394F7D224B52E8D2C /* Pods */,
 				3F74719C58DB64626B711CBD /* Frameworks */,
+				6B957BB9F1342709909588A5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,7 +180,7 @@
 				7F39FED228037AD10019CED0 /* Sources */,
 				7F39FED328037AD10019CED0 /* Frameworks */,
 				7F39FED428037AD10019CED0 /* Resources */,
-				B9670FD84FD99163B7B91D1A /* [CP] Embed Pods Frameworks */,
+				B8B0706D167705C26CE30EF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,7 +264,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B9670FD84FD99163B7B91D1A /* [CP] Embed Pods Frameworks */ = {
+		B8B0706D167705C26CE30EF0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,7 +446,7 @@
 		};
 		7F39FEEB28037AD20019CED0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98F755BE26DBBF5D6445395E /* Pods-TexMess.debug.xcconfig */;
+			baseConfigurationReference = F75B8EB5BD957E4044EC7A20 /* Pods-TexMess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +460,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,7 +476,7 @@
 		};
 		7F39FEEC28037AD20019CED0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE52B6C4A4065D47AFC99DE1 /* Pods-TexMess.release.xcconfig */;
+			baseConfigurationReference = F6143E355FC40591B499D71E /* Pods-TexMess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +490,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
