@@ -22,6 +22,15 @@
 		7F39FF1B2803FB720019CED0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39FF1A2803FB720019CED0 /* Constants.swift */; };
 		7F39FF1D2803FCE50019CED0 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39FF1C2803FCE50019CED0 /* MessageCell.swift */; };
 		7F39FF1F2803FDB70019CED0 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F39FF1E2803FDB70019CED0 /* MessageCell.xib */; };
+		7FA18B7C28EC027F00B60E71 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B7B28EC027F00B60E71 /* ConversationViewController.swift */; };
+		7FA18B7E28EFD48500B60E71 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B7D28EFD48500B60E71 /* Conversation.swift */; };
+		7FA18B8028EFD4F300B60E71 /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B7F28EFD4F300B60E71 /* Invitation.swift */; };
+		7FA18B8228EFD72300B60E71 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8128EFD72300B60E71 /* User.swift */; };
+		7FA18B8528EFD82C00B60E71 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8328EFD82C00B60E71 /* ConversationCell.swift */; };
+		7FA18B8628EFD82C00B60E71 /* ConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA18B8428EFD82C00B60E71 /* ConversationCell.xib */; };
+		7FE7C36528F3C3060075FC6D /* InvitationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */; };
+		7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */; };
+		7FE7C36928F3C4C10075FC6D /* InvitationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */; };
 		B946A02E6B19A99A30112441 /* Pods_TexMess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24D43745D03A776CB4EEE67 /* Pods_TexMess.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +52,15 @@
 		7F39FF1A2803FB720019CED0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7F39FF1C2803FCE50019CED0 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		7F39FF1E2803FDB70019CED0 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		7FA18B7B28EC027F00B60E71 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		7FA18B7D28EFD48500B60E71 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		7FA18B7F28EFD4F300B60E71 /* Invitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
+		7FA18B8128EFD72300B60E71 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7FA18B8328EFD82C00B60E71 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		7FA18B8428EFD82C00B60E71 /* ConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationCell.xib; sourceTree = "<group>"; };
+		7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationsViewController.swift; sourceTree = "<group>"; };
+		7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
+		7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitationsCell.xib; sourceTree = "<group>"; };
 		98F755BE26DBBF5D6445395E /* Pods-TexMess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.debug.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.debug.xcconfig"; sourceTree = "<group>"; };
 		C24D43745D03A776CB4EEE67 /* Pods_TexMess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexMess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE52B6C4A4065D47AFC99DE1 /* Pods-TexMess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.release.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +138,8 @@
 				7F39FF1028038C760019CED0 /* RegisterViewController.swift */,
 				7F39FF122803FA6D0019CED0 /* LoginViewController.swift */,
 				7F39FF142803FA870019CED0 /* ChatViewController.swift */,
+				7FA18B7B28EC027F00B60E71 /* ConversationViewController.swift */,
+				7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -130,6 +150,10 @@
 				7F39FEDF28037AD10019CED0 /* Main.storyboard */,
 				7F39FF1C2803FCE50019CED0 /* MessageCell.swift */,
 				7F39FF1E2803FDB70019CED0 /* MessageCell.xib */,
+				7FA18B8328EFD82C00B60E71 /* ConversationCell.swift */,
+				7FA18B8428EFD82C00B60E71 /* ConversationCell.xib */,
+				7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */,
+				7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,6 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				7F39FF182803FB4A0019CED0 /* Message.swift */,
+				7FA18B7D28EFD48500B60E71 /* Conversation.swift */,
+				7FA18B7F28EFD4F300B60E71 /* Invitation.swift */,
+				7FA18B8128EFD72300B60E71 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,11 +229,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA18B8628EFD82C00B60E71 /* ConversationCell.xib in Resources */,
 				7F39FEE628037AD20019CED0 /* LaunchScreen.storyboard in Resources */,
 				7F39FF1F2803FDB70019CED0 /* MessageCell.xib in Resources */,
 				7F36A7C3280BBCBC003F1D63 /* GoogleService-Info.plist in Resources */,
 				7F39FEE328037AD20019CED0 /* Assets.xcassets in Resources */,
 				7F39FEE128037AD10019CED0 /* Main.storyboard in Resources */,
+				7FE7C36928F3C4C10075FC6D /* InvitationsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,16 +288,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA18B7E28EFD48500B60E71 /* Conversation.swift in Sources */,
 				7F39FF132803FA6D0019CED0 /* LoginViewController.swift in Sources */,
+				7FA18B8028EFD4F300B60E71 /* Invitation.swift in Sources */,
 				7F39FF1D2803FCE50019CED0 /* MessageCell.swift in Sources */,
 				7F39FEDE28037AD10019CED0 /* ViewController.swift in Sources */,
 				7F39FF1128038C760019CED0 /* RegisterViewController.swift in Sources */,
+				7FA18B8228EFD72300B60E71 /* User.swift in Sources */,
 				7F39FF152803FA870019CED0 /* ChatViewController.swift in Sources */,
+				7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */,
 				7F39FEEF2803812E0019CED0 /* WelcomeViewController.swift in Sources */,
 				7F39FF192803FB4A0019CED0 /* Message.swift in Sources */,
 				7F39FEDA28037AD10019CED0 /* AppDelegate.swift in Sources */,
 				7F39FEDC28037AD10019CED0 /* SceneDelegate.swift in Sources */,
+				7FA18B7C28EC027F00B60E71 /* ConversationViewController.swift in Sources */,
+				7FE7C36528F3C3060075FC6D /* InvitationsViewController.swift in Sources */,
 				7F39FF1B2803FB720019CED0 /* Constants.swift in Sources */,
+				7FA18B8528EFD82C00B60E71 /* ConversationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

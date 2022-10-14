@@ -19,14 +19,14 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        tableView.register(UINib(nibName:K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        tableView.register(UINib(nibName:K.cellNibName, bundle: nil), forCellReuseIdentifier: K.messageCellId)
         navigationItem.title = K.appName
         navigationItem.hidesBackButton = true
         loadMessages()
     }
     
     func loadMessages() {
-        db.collection(K.FStore.collectionName)
+        db.collection(K.FStore.messages)
             .order(by: K.FStore.dateField)
             .addSnapshotListener { (querySnapshot, error) in
                 self.messages = []
@@ -53,7 +53,7 @@ class ChatViewController: UIViewController {
     
     @IBAction func sendPressed(_ sender: UIButton) {
         if let messageBody = messageTextfield.text, let user = Auth.auth().currentUser?.email {
-            db.collection(K.FStore.collectionName)
+            db.collection(K.FStore.messages)
                 .addDocument(data: [K.FStore.senderField : user,
                                     K.FStore.bodyField: messageBody,
                                     K.FStore.dateField: Date.init().timeIntervalSince1970]) { (error) in
@@ -85,7 +85,7 @@ extension ChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let message = messages[indexPath.row]
         if message.sender == Auth.auth().currentUser?.email {
-            let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: K.messageCellId, for: indexPath) as! MessageCell
             cell.leftImageView.isHidden = true
             cell.rightImageView.isHidden = false
             cell.messageBubble.backgroundColor = UIColor(named:K.BrandColors.lightPurple)
@@ -93,7 +93,7 @@ extension ChatViewController: UITableViewDataSource {
             cell.label.textColor = UIColor(named: K.BrandColors.purple)
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: K.messageCellId, for: indexPath) as! MessageCell
             cell.leftImageView.isHidden = false
             cell.rightImageView.isHidden = true
             cell.messageBubble.backgroundColor = UIColor(named:K.BrandColors.purple)
