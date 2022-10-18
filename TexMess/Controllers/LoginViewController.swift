@@ -19,18 +19,22 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseApp.configure()
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
+        }
         let authUI = FUIAuth.defaultAuthUI()
         // You need to adopt a FUIAuthDelegate protocol to receive callback
         authUI?.delegate = self
         
         let providers: [FUIAuthProvider] = [
-          FUIGoogleAuth(),
+       //   FUIGoogleAuth(authUI: FUIAuth.defaultAuthUI()!),
           FUIEmailAuth()
         ]
         authUI?.providers = providers
         
-        let authViewController = authUI?.authViewController()
+        let authViewController = (authUI?.authViewController())!
+       
+        self.present(authViewController, animated: false, completion: nil)
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {

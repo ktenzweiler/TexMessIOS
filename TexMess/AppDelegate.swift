@@ -13,6 +13,10 @@ import FirebaseAuthUI
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+//    override init() {
+//        FirebaseApp.configure()
+//    }
+    
     func application(_ app: UIApplication, open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
         let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?
