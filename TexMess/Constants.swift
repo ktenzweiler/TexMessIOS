@@ -32,4 +32,9 @@ struct K {
         static let bodyField = "body"
         static let dateField = "date"
     }
+    
+    struct KeyChain {
+        static let SIGNING_KEY = "SIGNING_KEY"
+        static let PUBLIC_KEY = "PUBLIC_KEY"
+    }
 }

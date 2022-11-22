@@ -32,6 +32,7 @@
 		7FE7C36528F3C3060075FC6D /* InvitationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */; };
 		7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */; };
 		7FE7C36928F3C4C10075FC6D /* InvitationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */; };
+		7FF2BEAE28FF5D67003ACD28 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2BEAD28FF5D67003ACD28 /* CryptoUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationsViewController.swift; sourceTree = "<group>"; };
 		7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
 		7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitationsCell.xib; sourceTree = "<group>"; };
+		7FF2BEAD28FF5D67003ACD28 /* CryptoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
 		F6143E355FC40591B499D71E /* Pods-TexMess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.release.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.release.xcconfig"; sourceTree = "<group>"; };
 		F75B8EB5BD957E4044EC7A20 /* Pods-TexMess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.debug.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 				7F39FEE428037AD20019CED0 /* LaunchScreen.storyboard */,
 				7F39FEE728037AD20019CED0 /* Info.plist */,
 				7F39FF1A2803FB720019CED0 /* Constants.swift */,
+				7FF2BEAD28FF5D67003ACD28 /* CryptoUtils.swift */,
 			);
 			path = TexMess;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				7F39FF1128038C760019CED0 /* RegisterViewController.swift in Sources */,
 				7FA18B8228EFD72300B60E71 /* User.swift in Sources */,
 				7F39FF152803FA870019CED0 /* ChatViewController.swift in Sources */,
+				7FF2BEAE28FF5D67003ACD28 /* CryptoUtils.swift in Sources */,
 				7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */,
 				7F39FEEF2803812E0019CED0 /* WelcomeViewController.swift in Sources */,
 				7F39FF192803FB4A0019CED0 /* Message.swift in Sources */,

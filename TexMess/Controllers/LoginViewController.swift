@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
+    let db = Firestore.firestore()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class LoginViewController: UIViewController {
         authUI?.delegate = self
         
         let providers: [FUIAuthProvider] = [
-       //   FUIGoogleAuth(authUI: FUIAuth.defaultAuthUI()!),
+          FUIGoogleAuth(authUI: FUIAuth.defaultAuthUI()!),
           FUIEmailAuth()
         ]
         authUI?.providers = providers
@@ -53,7 +54,45 @@ class LoginViewController: UIViewController {
 extension LoginViewController: FUIAuthDelegate {
     
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+        let email = authDataResult?.user.email
+        var firstName = ""
+        var lastName = ""
         
+        if let displayName = authDataResult?.user.displayName {
+            let nameArray = displayName.components(separatedBy: " ")
+            firstName = String(nameArray[0])
+            lastName = String(nameArray[1])
+        }
+        
+      // val pubKey = it.get("publicKey").toString()
+//                           val signingKey = it.get("signingKey").toString()
+//                           val localPubKey = CryptoUtils.getKey(PUBLIC_KEY)
+//                           val localSigningKey = CryptoUtils.getKey(SIGNING_KEY)
+
+        
+        let docRef = db.collection(K.FStore.users).document((authDataResult?.user.uid)!)
+        let cryptoUtils = CryptoUtils()
+        
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                var user = User(document: document)
+                
+                
+                if user?.publicKey == nil {
+                    user?.publicKey = cryptoUtils.generateEncryptionKey()
+                }
+                
+                if user?.signingKey == nil {
+                    user?.signingKey = cryptoUtils.generateSigningKey()
+                }
+                saveUserToFirestore(user)               
+            } else {
+               // let publicKey = CryptoUtils.generateEncryptionKey()
+                let signingKey = cryptoUtils.generateSigningKey()
+                let pubKey = cryptoUtils.generateEncryptionKey()
+                let user = User(firstName: firstName, lastName: lastName, email: email, publicKey: pubKey, signingKey: signingKey, invitations: nil, blockedUsers: nil)
+                saveUserToFirestore(user)
+            }
+        }
     }
-    
 }
