@@ -26,7 +26,7 @@
 		7FA18B7C28EC027F00B60E71 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B7B28EC027F00B60E71 /* ConversationViewController.swift */; };
 		7FA18B7E28EFD48500B60E71 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B7D28EFD48500B60E71 /* Conversation.swift */; };
 		7FA18B8028EFD4F300B60E71 /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B7F28EFD4F300B60E71 /* Invitation.swift */; };
-		7FA18B8228EFD72300B60E71 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8128EFD72300B60E71 /* User.swift */; };
+		7FA18B8228EFD72300B60E71 /* User_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8128EFD72300B60E71 /* User_.swift */; };
 		7FA18B8528EFD82C00B60E71 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8328EFD82C00B60E71 /* ConversationCell.swift */; };
 		7FA18B8628EFD82C00B60E71 /* ConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA18B8428EFD82C00B60E71 /* ConversationCell.xib */; };
 		7FE7C36528F3C3060075FC6D /* InvitationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */; };
@@ -57,7 +57,7 @@
 		7FA18B7B28EC027F00B60E71 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		7FA18B7D28EFD48500B60E71 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		7FA18B7F28EFD4F300B60E71 /* Invitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
-		7FA18B8128EFD72300B60E71 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7FA18B8128EFD72300B60E71 /* User_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User_.swift; sourceTree = "<group>"; };
 		7FA18B8328EFD82C00B60E71 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		7FA18B8428EFD82C00B60E71 /* ConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationCell.xib; sourceTree = "<group>"; };
 		7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationsViewController.swift; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 				7F39FF182803FB4A0019CED0 /* Message.swift */,
 				7FA18B7D28EFD48500B60E71 /* Conversation.swift */,
 				7FA18B7F28EFD4F300B60E71 /* Invitation.swift */,
-				7FA18B8128EFD72300B60E71 /* User.swift */,
+				7FA18B8128EFD72300B60E71 /* User_.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 				7F39FF1D2803FCE50019CED0 /* MessageCell.swift in Sources */,
 				7F39FEDE28037AD10019CED0 /* ViewController.swift in Sources */,
 				7F39FF1128038C760019CED0 /* RegisterViewController.swift in Sources */,
-				7FA18B8228EFD72300B60E71 /* User.swift in Sources */,
+				7FA18B8228EFD72300B60E71 /* User_.swift in Sources */,
 				7F39FF152803FA870019CED0 /* ChatViewController.swift in Sources */,
 				7FF2BEAE28FF5D67003ACD28 /* CryptoUtils.swift in Sources */,
 				7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */,

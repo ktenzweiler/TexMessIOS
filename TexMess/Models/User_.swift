@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import Firebase
 
-struct User {
+struct User_ : Codable {
     let firstName: String?
     let lastName: String?
     let email: String?
@@ -28,24 +27,25 @@ struct User {
                 "blockedUsers": self.blockedUsers]
     }
     
-    init(firstName: String?, lastName: String?, email: String?, publicKey: String?, signingKey: String?, invitations: Array<String>?, blockedUsers: Array<String>?) {
+    init(firstName: String?, lastName: String?, email: String?, publicKey: String?, signingKey: String?,conversations: Array<String>?, invitations: Array<String>?, blockedUsers: Array<String>?) {
         self.firstName = firstName;
         self.lastName = lastName;
         self.email = email;
         self.publicKey = publicKey;
+        self.conversations = conversations;
         self.signingKey = signingKey;
         self.invitations = invitations;
         self.blockedUsers = blockedUsers;
     }
     
-    init?(document: FIRDocumentSnapshot) {
-        guard let dict = snapshot.value as? [String: Any?] else { return nil }
-        guard let firstName = dict["firstName"] else { return nil }
-        guard let lastName = dict["lastName"] else { return nil }
-        guard let email = dict["email"] else { return nil }
-        guard let publicKey = dict["publicKey"] else { return nil }
-        guard let signingKey = dict["signingKey"] else { return nil }
-        guard let invitations = dict["invitations"] else { return nil }
-        guard let blockedUsers = dict["blockedUsers"] else { return nil }
-    }
+//    init?(document: DocumentSnapshot) {
+//        guard let dict = document.value as? [String: Any?] else { return nil }
+//        guard let firstName = dict["firstName"] else { return nil }
+//        guard let lastName = dict["lastName"] else { return nil }
+//        guard let email = dict["email"] else { return nil }
+//        guard let publicKey = dict["publicKey"] else { return nil }
+//        guard let signingKey = dict["signingKey"] else { return nil }
+//        guard let invitations = dict["invitations"] else { return nil }
+//        guard let blockedUsers = dict["blockedUsers"] else { return nil }
+//    }
 }

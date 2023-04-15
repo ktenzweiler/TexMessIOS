@@ -13,13 +13,35 @@ struct CryptoUtils {
         return true
     }
     
-    func generateEncryptionKey() -> String? {
+    func generateEncryptionKey() throws -> String? {
         
-        return "IamaEncryptionKey"
+        let attributes: NSDictionary = [
+            kSecAttrKeyType: kSecAttrKeyTypeECSECPrimeRandom,
+            kSecAttrKeySizeInBits: 256,
+            kSecAttrTokenID: kSecAttrTokenIDSecureEnclave,
+            kSecPrivateKeyAttrs: [
+                kSecAttrIsPermanent: true,
+                kSecAttrApplicationTag: "tag for key",
+                kSecAttrAccessControl: access
+            ]
+        ]
+        
+        var error: Unmanaged<CFError>?
+        guard let privateKey = SecKeyCreateRandomKey(attributes, &error) else {
+            throw error!.takeRetainedValue() as Error
+        }
+        
+        let publicKey = SecKeyCopyPublicKey(privateKey)
+        
+        guard let data = SecKeyCopyExternalRepresentation(publicKey!, &error) as? Data else {
+            throw error!.takeRetainedValue() as Error
+        }
+        
+        return  data.base64EncodedString()
     }
     
     func generateSigningKey() throws -> String? {
-        let tag = "com.texdroid.TexMess.signingkey".data(using: .utf8)!
+        let tag = "MySigningKey".data(using: .utf8)!
         let attributes: [String: Any] =
         [kSecAttrKeyType as String:            kSecAttrKeyTypeRSA,
              kSecAttrKeySizeInBits as String:      2048,
@@ -34,7 +56,6 @@ struct CryptoUtils {
         }
         
         let publicKey = SecKeyCopyPublicKey(privateKey)
-       
         
         guard let data = SecKeyCopyExternalRepresentation(publicKey!, &error) as? Data else {
             throw error!.takeRetainedValue() as Error

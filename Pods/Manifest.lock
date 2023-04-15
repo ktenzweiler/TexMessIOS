@@ -617,14 +617,6 @@ PODS:
   - FBSDKCoreKit_Basics (14.1.0)
   - FBSDKLoginKit (14.1.0):
     - FBSDKCoreKit (= 14.1.0)
-  - Firebase/Auth (10.0.0):
-    - Firebase/CoreOnly
-    - FirebaseAuth (~> 10.0.0)
-  - Firebase/CoreOnly (10.0.0):
-    - FirebaseCore (= 10.0.0)
-  - Firebase/Firestore (10.0.0):
-    - Firebase/CoreOnly
-    - FirebaseFirestore (~> 10.0.0)
   - FirebaseAnonymousAuthUI (12.3.0):
     - FirebaseAuth (< 11.0, >= 8.0)
     - FirebaseAuthUI
@@ -676,6 +668,11 @@ PODS:
     - "gRPC-C++ (~> 1.44.0)"
     - leveldb-library (~> 1.22)
     - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseFirestoreSwift (10.8.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseCoreExtension (~> 10.0)
+    - FirebaseFirestore (~> 10.0)
+    - FirebaseSharedSwift (~> 10.0)
   - FirebaseFirestoreUI (12.3.0):
     - FirebaseFirestore (< 11.0, >= 8.0)
   - FirebaseGoogleAuthUI (12.3.0):
@@ -689,6 +686,7 @@ PODS:
   - FirebasePhoneAuthUI (12.3.0):
     - FirebaseAuth
     - FirebaseAuthUI
+  - FirebaseSharedSwift (10.8.0)
   - FirebaseStorage (10.0.0):
     - FirebaseAppCheckInterop (~> 10.0)
     - FirebaseAuthInterop (~> 10.0)
@@ -825,9 +823,14 @@ PODS:
 
 DEPENDENCIES:
   - CLTypingLabel (~> 0.4.0)
-  - Firebase/Auth
-  - Firebase/Firestore
+  - FirebaseAuth
+  - FirebaseFirestore
+  - FirebaseFirestoreSwift
   - FirebaseUI
+  - FirebaseUI/Auth
+  - FirebaseUI/Google
+  - FirebaseUI/OAuth
+  - FirebaseUI/Phone
   - IQKeyboardManager
 
 SPEC REPOS:
@@ -840,7 +843,6 @@ SPEC REPOS:
     - FBSDKCoreKit
     - FBSDKCoreKit_Basics
     - FBSDKLoginKit
-    - Firebase
     - FirebaseAnonymousAuthUI
     - FirebaseAppCheckInterop
     - FirebaseAuth
@@ -854,10 +856,12 @@ SPEC REPOS:
     - FirebaseEmailAuthUI
     - FirebaseFacebookAuthUI
     - FirebaseFirestore
+    - FirebaseFirestoreSwift
     - FirebaseFirestoreUI
     - FirebaseGoogleAuthUI
     - FirebaseOAuthUI
     - FirebasePhoneAuthUI
+    - FirebaseSharedSwift
     - FirebaseStorage
     - FirebaseStorageUI
     - FirebaseUI
@@ -883,7 +887,6 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 24f8bc8d3b5b2a8c5c656a1329492a12e8efa792
   FBSDKCoreKit_Basics: 6e578c9bdc7aa1365dbbbde633c9ebb536bcaa98
   FBSDKLoginKit: 787de205d524c3a4b17d527916f1d066e4361660
-  Firebase: 1b810f3d0c0532e27a48f1961f8c0400a668a2cf
   FirebaseAnonymousAuthUI: 93be34bc7a640cc89ccdb1289916179ac6d5eaf4
   FirebaseAppCheckInterop: 9a7af9d0a4d9197265cda30194f3644e8aea24f9
   FirebaseAuth: 493382cf533cc45e2862b00e9aa4cfe4c98daf71
@@ -897,10 +900,12 @@ SPEC CHECKSUMS:
   FirebaseEmailAuthUI: 93c49123133a5ff934e05d15c51462ed0f12ee0a
   FirebaseFacebookAuthUI: 2ed58e670fbf1a8203c81ffc3a73a8739f7ce25c
   FirebaseFirestore: 5007583f3db2129de8e87f18ee63f4c86f07e7a3
+  FirebaseFirestoreSwift: d607f5e8a206640ffd2573f99e9830b80ab7d1c0
   FirebaseFirestoreUI: 626383a5a291b4c24851957b893f0e384177bb65
   FirebaseGoogleAuthUI: 07addbda8ded46089a08681bf101c424eca79337
   FirebaseOAuthUI: 7df89aca072aaba79a63f8cabb0183a2e818c3d3
   FirebasePhoneAuthUI: 75e26e892ab6136003311d89e9bda31f54f5363f
+  FirebaseSharedSwift: e9e23efae965af553a8d1524efa3f64b5ef7ef0a
   FirebaseStorage: 8b0b0630e11b9f3e4a479a26cfccb70ec790ec50
   FirebaseStorageUI: e395358d689cd64b967b2402939ee0f503de63b5
   FirebaseUI: e9a2dd42f5b593cd8b6e64c11d30ded38f30e48c
@@ -917,6 +922,6 @@ SPEC CHECKSUMS:
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   SDWebImage: e5cc87bf736e60f49592f307bdf9e157189298a3
 
-PODFILE CHECKSUM: 9a578db056b1612ee139ac321d5d421559e5efe5
+PODFILE CHECKSUM: a7ba2641b092163d980820661c614ef143608988
 
 COCOAPODS: 1.11.3
