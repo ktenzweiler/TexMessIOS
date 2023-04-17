@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
         
         let authViewController = (authUI?.authViewController())!
        
-        self.present(authViewController, animated: false, completion: nil)
+        self.present(authViewController, animated: true, completion: nil)
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
@@ -67,37 +67,77 @@ extension LoginViewController: FUIAuthDelegate {
             lastName = String(nameArray[1])
         }
         
-      // val pubKey = it.get("publicKey").toString()
-//                           val signingKey = it.get("signingKey").toString()
-//                           val localPubKey = CryptoUtils.getKey(PUBLIC_KEY)
-//                           val localSigningKey = CryptoUtils.getKey(SIGNING_KEY)
-
+        //       val pubKey = it.get("publicKey").toString()
+        //                           val signingKey = it.get("signingKey").toString()
+        //                           val localPubKey = CryptoUtils.getKey(PUBLIC_KEY)
+        //                           val localSigningKey = CryptoUtils.getKey(SIGNING_KEY)
+        
         
         let docRef = db.collection(K.FStore.users).document((authDataResult?.user.uid)!)
         let cryptoUtils = CryptoUtils()
         
+        if (!cryptoUtils.hasKey(keyName: cryptoUtils.PUBLIC_KEY)) {
+            cryptoUtils.generateEncryptionKey()
+        }
+        
+        if (!cryptoUtils.hasKey(keyName: cryptoUtils.SIGNING_KEY)) {
+            cryptoUtils.generateSigningKey()
+        }
+        
+        
+        
         docRef.getDocument(as: User_.self) { result in
             switch result {
-                case .success(let user):
-                    // A `City` value was successfully initialized from the DocumentSnapshot.
-                    print("User: \(user)")
-                    if user.publicKey == nil {
-                        user.publicKey = cryptoUtils.generateEncryptionKey()
+            case .success(let user):
+                
+                print("User: \(user)")
+                var publicKey: String?
+                var signingKey: String?
+                if user.publicKey == nil {
+                    do {
+                        try {
+                            publicKey = cryptoUtils.generateEncryptionKey()
+                            if user.signingKey == nil {
+                                signingKey = cryptoUtils.generateSigningKey()
+                            }
+                        }
+                    } catch {
+                        print(error)
                     }
-                    
-                    if user?.signingKey == nil {
-                        user?.signingKey = cryptoUtils.generateSigningKey()
-                    }
-                    //saveUserToFirestore(user)
-                case .failure(let error):
-                    // A `City` value could not be initialized from the DocumentSnapshot.
-                    print("Error decoding city: \(error)")
-                    // let publicKey = CryptoUtils.generateEncryptionKey()
-                     let signingKey = cryptoUtils.generateSigningKey()
-                     let pubKey = cryptoUtils.generateEncryptionKey()
-                     let user = User(firstName: firstName, lastName: lastName, email: email, publicKey: pubKey, signingKey: signingKey, invitations: nil, blockedUsers: nil)
-                    //saveUserToFirestore(user)
                 }
+                
+                
+                if user.signingKey == nil {
+                    signingKey = cryptoUtils.generateSigningKey()
+                }
+                
+                saveUserToFirestore(user)
+            case .failure(let error):
+                // A `City` value could not be initialized from the DocumentSnapshot.
+                print("Error decoding city: \(error)")
+                
+                
+                // let publicKey = CryptoUtils.generateEncryptionKey()
+                var pubKey: String?
+                var signingKey: String?
+                //
+                do {
+                    try {
+                        signingKey = cryptoUtils.generateSigningKey()
+                        pubKey = cryptoUtils.generateEncryptionKey()
+                    }
+                } catch {
+                    let signingKey = "error"
+                }
+                
+                
+                let user = User_(firstName: firstName, lastName: lastName, email: email, publicKey: pubKey, signingKey: signingKey, conversations: nil, invitations: nil, blockedUsers: nil)
+                saveUserToFirestore(user)
+            }
+        }
+        
+        func saveUserToFirestore(user: User_) {
+            
         }
     }
 }

@@ -9,6 +9,9 @@ import Foundation
 
 struct CryptoUtils {
     
+    let LOCAL_SECRET_KEY = "LOCAL_SECRET_KEY"
+    let SIGNING_KEY = "SIGNING_KEY"
+    
     func hasKey(keyName: String) -> Bool {
         return true
     }
@@ -21,7 +24,7 @@ struct CryptoUtils {
             kSecAttrTokenID: kSecAttrTokenIDSecureEnclave,
             kSecPrivateKeyAttrs: [
                 kSecAttrIsPermanent: true,
-                kSecAttrApplicationTag: "tag for key",
+                kSecAttrApplicationTag: LOCAL_SECRET_KEY,
                 kSecAttrAccessControl: access
             ]
         ]
@@ -41,16 +44,17 @@ struct CryptoUtils {
     }
     
     func generateSigningKey() throws -> String? {
-        let tag = "MySigningKey".data(using: .utf8)!
+        let tag = SIGNING_KEY.data(using: .utf8)!
         let attributes: [String: Any] =
         [kSecAttrKeyType as String:            kSecAttrKeyTypeRSA,
              kSecAttrKeySizeInBits as String:      2048,
              kSecPrivateKeyAttrs as String:
                 [kSecAttrIsPermanent as String:    true,
-                 kSecAttrApplicationTag as String: tag]
+                 kSecAttrApplicationTag as String: tag] as [String : Any]
         ]
         
         var error: Unmanaged<CFError>?
+        
         guard let privateKey = SecKeyCreateRandomKey(attributes as CFDictionary, &error) else {
             throw error!.takeRetainedValue() as Error
         }
