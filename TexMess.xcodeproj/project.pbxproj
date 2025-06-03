@@ -29,6 +29,14 @@
 		7FA18B8228EFD72300B60E71 /* User_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8128EFD72300B60E71 /* User_.swift */; };
 		7FA18B8528EFD82C00B60E71 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8328EFD82C00B60E71 /* ConversationCell.swift */; };
 		7FA18B8628EFD82C00B60E71 /* ConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA18B8428EFD82C00B60E71 /* ConversationCell.xib */; };
+		7FB322F729EDB94F00610AA6 /* decrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322F629EDB94F00610AA6 /* decrypt.swift */; };
+		7FB322F929EDB98000610AA6 /* deriveSymmetricKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322F829EDB98000610AA6 /* deriveSymmetricKey.swift */; };
+		7FB322FB29EDB9A400610AA6 /* encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322FA29EDB9A400610AA6 /* encrypt.swift */; };
+		7FB322FD29EDB9C200610AA6 /* exportPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322FC29EDB9C200610AA6 /* exportPrivateKey.swift */; };
+		7FB322FF29EDB9DE00610AA6 /* exportPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322FE29EDB9DE00610AA6 /* exportPublicKey.swift */; };
+		7FB3230129EDBA0400610AA6 /* generatePrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3230029EDBA0400610AA6 /* generatePrivateKey.swift */; };
+		7FB3230329EDBA2500610AA6 /* importPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3230229EDBA2500610AA6 /* importPrivateKey.swift */; };
+		7FB3230529EDBA4300610AA6 /* importPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3230429EDBA4300610AA6 /* importPublicKey.swift */; };
 		7FE7C36528F3C3060075FC6D /* InvitationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */; };
 		7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */; };
 		7FE7C36928F3C4C10075FC6D /* InvitationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */; };
@@ -60,6 +68,14 @@
 		7FA18B8128EFD72300B60E71 /* User_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User_.swift; sourceTree = "<group>"; };
 		7FA18B8328EFD82C00B60E71 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		7FA18B8428EFD82C00B60E71 /* ConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationCell.xib; sourceTree = "<group>"; };
+		7FB322F629EDB94F00610AA6 /* decrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decrypt.swift; sourceTree = "<group>"; };
+		7FB322F829EDB98000610AA6 /* deriveSymmetricKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deriveSymmetricKey.swift; sourceTree = "<group>"; };
+		7FB322FA29EDB9A400610AA6 /* encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encrypt.swift; sourceTree = "<group>"; };
+		7FB322FC29EDB9C200610AA6 /* exportPrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exportPrivateKey.swift; sourceTree = "<group>"; };
+		7FB322FE29EDB9DE00610AA6 /* exportPublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exportPublicKey.swift; sourceTree = "<group>"; };
+		7FB3230029EDBA0400610AA6 /* generatePrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generatePrivateKey.swift; sourceTree = "<group>"; };
+		7FB3230229EDBA2500610AA6 /* importPrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = importPrivateKey.swift; sourceTree = "<group>"; };
+		7FB3230429EDBA4300610AA6 /* importPublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = importPublicKey.swift; sourceTree = "<group>"; };
 		7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationsViewController.swift; sourceTree = "<group>"; };
 		7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
 		7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitationsCell.xib; sourceTree = "<group>"; };
@@ -118,6 +134,7 @@
 		7F39FED828037AD10019CED0 /* TexMess */ = {
 			isa = PBXGroup;
 			children = (
+				7FB322F529EDB92000610AA6 /* Encryption */,
 				7F36A7C2280BBCBC003F1D63 /* GoogleService-Info.plist */,
 				7F39FED928037AD10019CED0 /* AppDelegate.swift */,
 				7F39FEDB28037AD10019CED0 /* SceneDelegate.swift */,
@@ -170,6 +187,21 @@
 				7FA18B8128EFD72300B60E71 /* User_.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7FB322F529EDB92000610AA6 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				7FB322F629EDB94F00610AA6 /* decrypt.swift */,
+				7FB322F829EDB98000610AA6 /* deriveSymmetricKey.swift */,
+				7FB322FA29EDB9A400610AA6 /* encrypt.swift */,
+				7FB322FC29EDB9C200610AA6 /* exportPrivateKey.swift */,
+				7FB322FE29EDB9DE00610AA6 /* exportPublicKey.swift */,
+				7FB3230029EDBA0400610AA6 /* generatePrivateKey.swift */,
+				7FB3230229EDBA2500610AA6 /* importPrivateKey.swift */,
+				7FB3230429EDBA4300610AA6 /* importPublicKey.swift */,
+			);
+			path = Encryption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +323,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB322F929EDB98000610AA6 /* deriveSymmetricKey.swift in Sources */,
 				7FA18B7E28EFD48500B60E71 /* Conversation.swift in Sources */,
+				7FB3230329EDBA2500610AA6 /* importPrivateKey.swift in Sources */,
 				7F39FF132803FA6D0019CED0 /* LoginViewController.swift in Sources */,
 				7FA18B8028EFD4F300B60E71 /* Invitation.swift in Sources */,
 				7F39FF1D2803FCE50019CED0 /* MessageCell.swift in Sources */,
@@ -303,12 +337,18 @@
 				7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */,
 				7F39FEEF2803812E0019CED0 /* WelcomeViewController.swift in Sources */,
 				7F39FF192803FB4A0019CED0 /* Message.swift in Sources */,
+				7FB322FD29EDB9C200610AA6 /* exportPrivateKey.swift in Sources */,
 				7F39FEDA28037AD10019CED0 /* AppDelegate.swift in Sources */,
+				7FB322F729EDB94F00610AA6 /* decrypt.swift in Sources */,
 				7F39FEDC28037AD10019CED0 /* SceneDelegate.swift in Sources */,
 				7FA18B7C28EC027F00B60E71 /* ConversationViewController.swift in Sources */,
+				7FB3230129EDBA0400610AA6 /* generatePrivateKey.swift in Sources */,
+				7FB322FB29EDB9A400610AA6 /* encrypt.swift in Sources */,
+				7FB322FF29EDB9DE00610AA6 /* exportPublicKey.swift in Sources */,
 				7FE7C36528F3C3060075FC6D /* InvitationsViewController.swift in Sources */,
 				7F39FF1B2803FB720019CED0 /* Constants.swift in Sources */,
 				7FA18B8528EFD82C00B60E71 /* ConversationCell.swift in Sources */,
+				7FB3230529EDBA4300610AA6 /* importPublicKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
