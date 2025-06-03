@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6916A21100A3F0D111E9FF08 /* Pods_TexMess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463CD85F2CA91756A4164198 /* Pods_TexMess.framework */; };
 		7F36A7C3280BBCBC003F1D63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F36A7C2280BBCBC003F1D63 /* GoogleService-Info.plist */; };
 		7F39FEDA28037AD10019CED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39FED928037AD10019CED0 /* AppDelegate.swift */; };
 		7F39FEDC28037AD10019CED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39FEDB28037AD10019CED0 /* SceneDelegate.swift */; };
@@ -25,16 +26,25 @@
 		7FA18B7C28EC027F00B60E71 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B7B28EC027F00B60E71 /* ConversationViewController.swift */; };
 		7FA18B7E28EFD48500B60E71 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B7D28EFD48500B60E71 /* Conversation.swift */; };
 		7FA18B8028EFD4F300B60E71 /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B7F28EFD4F300B60E71 /* Invitation.swift */; };
-		7FA18B8228EFD72300B60E71 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8128EFD72300B60E71 /* User.swift */; };
+		7FA18B8228EFD72300B60E71 /* User_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8128EFD72300B60E71 /* User_.swift */; };
 		7FA18B8528EFD82C00B60E71 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA18B8328EFD82C00B60E71 /* ConversationCell.swift */; };
 		7FA18B8628EFD82C00B60E71 /* ConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA18B8428EFD82C00B60E71 /* ConversationCell.xib */; };
+		7FB322F729EDB94F00610AA6 /* decrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322F629EDB94F00610AA6 /* decrypt.swift */; };
+		7FB322F929EDB98000610AA6 /* deriveSymmetricKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322F829EDB98000610AA6 /* deriveSymmetricKey.swift */; };
+		7FB322FB29EDB9A400610AA6 /* encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322FA29EDB9A400610AA6 /* encrypt.swift */; };
+		7FB322FD29EDB9C200610AA6 /* exportPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322FC29EDB9C200610AA6 /* exportPrivateKey.swift */; };
+		7FB322FF29EDB9DE00610AA6 /* exportPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB322FE29EDB9DE00610AA6 /* exportPublicKey.swift */; };
+		7FB3230129EDBA0400610AA6 /* generatePrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3230029EDBA0400610AA6 /* generatePrivateKey.swift */; };
+		7FB3230329EDBA2500610AA6 /* importPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3230229EDBA2500610AA6 /* importPrivateKey.swift */; };
+		7FB3230529EDBA4300610AA6 /* importPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3230429EDBA4300610AA6 /* importPublicKey.swift */; };
 		7FE7C36528F3C3060075FC6D /* InvitationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */; };
 		7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */; };
 		7FE7C36928F3C4C10075FC6D /* InvitationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */; };
-		B946A02E6B19A99A30112441 /* Pods_TexMess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24D43745D03A776CB4EEE67 /* Pods_TexMess.framework */; };
+		7FF2BEAE28FF5D67003ACD28 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2BEAD28FF5D67003ACD28 /* CryptoUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		463CD85F2CA91756A4164198 /* Pods_TexMess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexMess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F36A7C2280BBCBC003F1D63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F39FED628037AD10019CED0 /* TexMess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TexMess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F39FED928037AD10019CED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,15 +65,23 @@
 		7FA18B7B28EC027F00B60E71 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		7FA18B7D28EFD48500B60E71 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		7FA18B7F28EFD4F300B60E71 /* Invitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
-		7FA18B8128EFD72300B60E71 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7FA18B8128EFD72300B60E71 /* User_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User_.swift; sourceTree = "<group>"; };
 		7FA18B8328EFD82C00B60E71 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		7FA18B8428EFD82C00B60E71 /* ConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationCell.xib; sourceTree = "<group>"; };
+		7FB322F629EDB94F00610AA6 /* decrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decrypt.swift; sourceTree = "<group>"; };
+		7FB322F829EDB98000610AA6 /* deriveSymmetricKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deriveSymmetricKey.swift; sourceTree = "<group>"; };
+		7FB322FA29EDB9A400610AA6 /* encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encrypt.swift; sourceTree = "<group>"; };
+		7FB322FC29EDB9C200610AA6 /* exportPrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exportPrivateKey.swift; sourceTree = "<group>"; };
+		7FB322FE29EDB9DE00610AA6 /* exportPublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exportPublicKey.swift; sourceTree = "<group>"; };
+		7FB3230029EDBA0400610AA6 /* generatePrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generatePrivateKey.swift; sourceTree = "<group>"; };
+		7FB3230229EDBA2500610AA6 /* importPrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = importPrivateKey.swift; sourceTree = "<group>"; };
+		7FB3230429EDBA4300610AA6 /* importPublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = importPublicKey.swift; sourceTree = "<group>"; };
 		7FE7C36428F3C3060075FC6D /* InvitationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationsViewController.swift; sourceTree = "<group>"; };
 		7FE7C36628F3C4C10075FC6D /* InvitationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
 		7FE7C36728F3C4C10075FC6D /* InvitationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitationsCell.xib; sourceTree = "<group>"; };
-		98F755BE26DBBF5D6445395E /* Pods-TexMess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.debug.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.debug.xcconfig"; sourceTree = "<group>"; };
-		C24D43745D03A776CB4EEE67 /* Pods_TexMess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexMess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE52B6C4A4065D47AFC99DE1 /* Pods-TexMess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.release.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.release.xcconfig"; sourceTree = "<group>"; };
+		7FF2BEAD28FF5D67003ACD28 /* CryptoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
+		F6143E355FC40591B499D71E /* Pods-TexMess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.release.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.release.xcconfig"; sourceTree = "<group>"; };
+		F75B8EB5BD957E4044EC7A20 /* Pods-TexMess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexMess.debug.xcconfig"; path = "Target Support Files/Pods-TexMess/Pods-TexMess.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B946A02E6B19A99A30112441 /* Pods_TexMess.framework in Frameworks */,
+				6916A21100A3F0D111E9FF08 /* Pods_TexMess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,16 +99,16 @@
 		3F74719C58DB64626B711CBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C24D43745D03A776CB4EEE67 /* Pods_TexMess.framework */,
+				463CD85F2CA91756A4164198 /* Pods_TexMess.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6C37E4D394F7D224B52E8D2C /* Pods */ = {
+		6B957BB9F1342709909588A5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				98F755BE26DBBF5D6445395E /* Pods-TexMess.debug.xcconfig */,
-				FE52B6C4A4065D47AFC99DE1 /* Pods-TexMess.release.xcconfig */,
+				F75B8EB5BD957E4044EC7A20 /* Pods-TexMess.debug.xcconfig */,
+				F6143E355FC40591B499D71E /* Pods-TexMess.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -100,8 +118,8 @@
 			children = (
 				7F39FED828037AD10019CED0 /* TexMess */,
 				7F39FED728037AD10019CED0 /* Products */,
-				6C37E4D394F7D224B52E8D2C /* Pods */,
 				3F74719C58DB64626B711CBD /* Frameworks */,
+				6B957BB9F1342709909588A5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +134,7 @@
 		7F39FED828037AD10019CED0 /* TexMess */ = {
 			isa = PBXGroup;
 			children = (
+				7FB322F529EDB92000610AA6 /* Encryption */,
 				7F36A7C2280BBCBC003F1D63 /* GoogleService-Info.plist */,
 				7F39FED928037AD10019CED0 /* AppDelegate.swift */,
 				7F39FEDB28037AD10019CED0 /* SceneDelegate.swift */,
@@ -127,6 +146,7 @@
 				7F39FEE428037AD20019CED0 /* LaunchScreen.storyboard */,
 				7F39FEE728037AD20019CED0 /* Info.plist */,
 				7F39FF1A2803FB720019CED0 /* Constants.swift */,
+				7FF2BEAD28FF5D67003ACD28 /* CryptoUtils.swift */,
 			);
 			path = TexMess;
 			sourceTree = "<group>";
@@ -164,9 +184,24 @@
 				7F39FF182803FB4A0019CED0 /* Message.swift */,
 				7FA18B7D28EFD48500B60E71 /* Conversation.swift */,
 				7FA18B7F28EFD4F300B60E71 /* Invitation.swift */,
-				7FA18B8128EFD72300B60E71 /* User.swift */,
+				7FA18B8128EFD72300B60E71 /* User_.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7FB322F529EDB92000610AA6 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				7FB322F629EDB94F00610AA6 /* decrypt.swift */,
+				7FB322F829EDB98000610AA6 /* deriveSymmetricKey.swift */,
+				7FB322FA29EDB9A400610AA6 /* encrypt.swift */,
+				7FB322FC29EDB9C200610AA6 /* exportPrivateKey.swift */,
+				7FB322FE29EDB9DE00610AA6 /* exportPublicKey.swift */,
+				7FB3230029EDBA0400610AA6 /* generatePrivateKey.swift */,
+				7FB3230229EDBA2500610AA6 /* importPrivateKey.swift */,
+				7FB3230429EDBA4300610AA6 /* importPublicKey.swift */,
+			);
+			path = Encryption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +215,7 @@
 				7F39FED228037AD10019CED0 /* Sources */,
 				7F39FED328037AD10019CED0 /* Frameworks */,
 				7F39FED428037AD10019CED0 /* Resources */,
-				B9670FD84FD99163B7B91D1A /* [CP] Embed Pods Frameworks */,
+				B8B0706D167705C26CE30EF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,7 +299,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B9670FD84FD99163B7B91D1A /* [CP] Embed Pods Frameworks */ = {
+		B8B0706D167705C26CE30EF0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,23 +323,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB322F929EDB98000610AA6 /* deriveSymmetricKey.swift in Sources */,
 				7FA18B7E28EFD48500B60E71 /* Conversation.swift in Sources */,
+				7FB3230329EDBA2500610AA6 /* importPrivateKey.swift in Sources */,
 				7F39FF132803FA6D0019CED0 /* LoginViewController.swift in Sources */,
 				7FA18B8028EFD4F300B60E71 /* Invitation.swift in Sources */,
 				7F39FF1D2803FCE50019CED0 /* MessageCell.swift in Sources */,
 				7F39FEDE28037AD10019CED0 /* ViewController.swift in Sources */,
 				7F39FF1128038C760019CED0 /* RegisterViewController.swift in Sources */,
-				7FA18B8228EFD72300B60E71 /* User.swift in Sources */,
+				7FA18B8228EFD72300B60E71 /* User_.swift in Sources */,
 				7F39FF152803FA870019CED0 /* ChatViewController.swift in Sources */,
+				7FF2BEAE28FF5D67003ACD28 /* CryptoUtils.swift in Sources */,
 				7FE7C36828F3C4C10075FC6D /* InvitationCell.swift in Sources */,
 				7F39FEEF2803812E0019CED0 /* WelcomeViewController.swift in Sources */,
 				7F39FF192803FB4A0019CED0 /* Message.swift in Sources */,
+				7FB322FD29EDB9C200610AA6 /* exportPrivateKey.swift in Sources */,
 				7F39FEDA28037AD10019CED0 /* AppDelegate.swift in Sources */,
+				7FB322F729EDB94F00610AA6 /* decrypt.swift in Sources */,
 				7F39FEDC28037AD10019CED0 /* SceneDelegate.swift in Sources */,
 				7FA18B7C28EC027F00B60E71 /* ConversationViewController.swift in Sources */,
+				7FB3230129EDBA0400610AA6 /* generatePrivateKey.swift in Sources */,
+				7FB322FB29EDB9A400610AA6 /* encrypt.swift in Sources */,
+				7FB322FF29EDB9DE00610AA6 /* exportPublicKey.swift in Sources */,
 				7FE7C36528F3C3060075FC6D /* InvitationsViewController.swift in Sources */,
 				7F39FF1B2803FB720019CED0 /* Constants.swift in Sources */,
 				7FA18B8528EFD82C00B60E71 /* ConversationCell.swift in Sources */,
+				7FB3230529EDBA4300610AA6 /* importPublicKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +490,7 @@
 		};
 		7F39FEEB28037AD20019CED0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98F755BE26DBBF5D6445395E /* Pods-TexMess.debug.xcconfig */;
+			baseConfigurationReference = F75B8EB5BD957E4044EC7A20 /* Pods-TexMess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +504,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,7 +520,7 @@
 		};
 		7F39FEEC28037AD20019CED0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE52B6C4A4065D47AFC99DE1 /* Pods-TexMess.release.xcconfig */;
+			baseConfigurationReference = F6143E355FC40591B499D71E /* Pods-TexMess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +534,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

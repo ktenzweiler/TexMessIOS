@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1099298813718-72han6287ulias672mi3s8k3gbocj1an.apps.googleusercontent.com</string>
+	<string>1099298813718-20lq29qhf0fera4jak3l9pgt5ea5e5fp.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1099298813718-72han6287ulias672mi3s8k3gbocj1an</string>
+	<string>com.googleusercontent.apps.1099298813718-20lq29qhf0fera4jak3l9pgt5ea5e5fp</string>
 	<key>ANDROID_CLIENT_ID</key>
 	<string>1099298813718-mtb7hd8uj8ofo8530umkcorlo0krh454.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
@@ -15,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.texdroid.texmess</string>
+	<string>com.texdroid.TexMess</string>
 	<key>PROJECT_ID</key>
 	<string>texmess-834dd</string>
 	<key>STORAGE_BUCKET</key>
@@ -31,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1099298813718:ios:aaa3d7cc0fa8cd567e0237</string>
+	<string>1:1099298813718:ios:abcc8e5d0a5014657e0237</string>
 </dict>
 </plist>
